@@ -4,7 +4,7 @@ public class Main {
 
         // Задание 1
 
-        int clientOs = 0;
+        int clientOs = 1;
         if (clientOs == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
@@ -14,8 +14,8 @@ public class Main {
 
         // Задание 2
 
-        clientOs = 1;
-        int clientDeviceYear = 2015;
+        clientOs = 0;
+        int clientDeviceYear = 2014;
         if (clientOs == 1 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
@@ -25,13 +25,13 @@ public class Main {
         if (clientOs == 0 && clientDeviceYear >= 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
-        else if (clientOs == 1 && clientDeviceYear < 2015) {
+        else if (clientOs == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облеченную версию приложения для iOS по ссылке");
         }
 
         // Задание 3
 
-        int year = 2020;
+        int year = 2021;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
         }else{
@@ -40,20 +40,20 @@ public class Main {
 
         // Задание 4
 
-        int deliveryDistance = 95;
+        int deliveryDistance = 70;
         if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: 1");
         }
-        else if (deliveryDistance >= 20 || deliveryDistance <= 60) {
+        else if (deliveryDistance > 20 && deliveryDistance <= 60) {
             System.out.println("Потребуется дней: 2");
         }
-        else if (deliveryDistance >= 60 || deliveryDistance <= 100) {
+        else if (deliveryDistance > 60 || deliveryDistance <= 100) {
             System.out.println("Потребуется дней: 3");
         }
 
         // Задание 5
 
-        int monthNumber = 12;
+        int monthNumber = 13;
         switch (monthNumber) {
             case 1:
             case 2:
